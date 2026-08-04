@@ -19,8 +19,6 @@ public:
             int val=prefixSum[j]-k;
             if(freq.find(val)!=freq.end()){
             count+=freq[val];
-            }if(freq.find(prefixSum[j])==freq.end()){
-                freq[prefixSum[j]]=0;
             }
             freq[prefixSum[j]]++;
         }
